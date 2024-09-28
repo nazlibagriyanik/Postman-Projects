@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "44bf92b3-0a41-42a9-9421-b0fdb684bb1d",
+		"name": "Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37048746",
+		"_collection_link": "https://www.postman.com/nazlibagriyanik/myworkspce/collection/uhnuur2/project?action=share&source=collection_link&creator=37048746"
+	},
+	"item": [
+		{
+			"name": "photoOfDay",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?api_key=OYZBHijGGvjr3ePa8QMP0LIhUBW7EIGay1g9fWAJ",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "OYZBHijGGvjr3ePa8QMP0LIhUBW7EIGay1g9fWAJ"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nearOfEarth",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/neo/rest/v1/feed?start_date=2020-08-03&end_date=2020-08-10&api_key=OYZBHijGGvjr3ePa8QMP0LIhUBW7EIGay1g9fWAJ",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"neo",
+						"rest",
+						"v1",
+						"feed"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2020-08-03"
+						},
+						{
+							"key": "end_date",
+							"value": "2020-08-10"
+						},
+						{
+							"key": "api_key",
+							"value": "OYZBHijGGvjr3ePa8QMP0LIhUBW7EIGay1g9fWAJ"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
